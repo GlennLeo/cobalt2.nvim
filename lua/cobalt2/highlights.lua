@@ -97,80 +97,80 @@ hl.common = {
 hl.syntax = {
     String = {fg = c.green, fmt = cfg.code_style.strings},
     Character = colors.Orange,
-    Number = colors.Orange,
-    Float = colors.Orange,
-    Boolean = colors.Orange,
-    Type = colors.Yellow,
+    Number = colors.Red,
+    Float = colors.Red,
+    Boolean = colors.Red,
+    Type = colors.Purple,
     Structure = colors.Yellow,
-    StorageClass = colors.Yellow,
-    Identifier = {fg = c.red, fmt = cfg.code_style.variables},
-    Constant = colors.Cyan,
-    PreProc = colors.Purple,
-    PreCondit = colors.Purple,
-    Include = colors.Purple,
-    Keyword = {fg = c.purple, fmt = cfg.code_style.keywords},
-    Define = colors.Purple,
-    Typedef = colors.Purple,
-    Exception = colors.Purple,
-    Conditional = {fg = c.purple, fmt = cfg.code_style.keywords},
-    Repeat = {fg = c.purple, fmt = cfg.code_style.keywords},
-    Statement = colors.Purple,
-    Macro = colors.Red,
-    Error = colors.Purple,
-    Label = colors.Purple,
-    Special = colors.Red,
-    SpecialChar = colors.Red,
-    Function = {fg = c.blue, fmt = cfg.code_style.functions},
-    Operator = colors.Purple,
+    StorageClass = colors.Orange,
+    Identifier = {fg = c.purple, fmt = cfg.code_style.variables},
+    Constant = colors.Red,
+    PreProc = colors.Red,
+    PreCondit = colors.Red,
+    Include = colors.Cyan,
+    Keyword = {fg = c.orange, fmt = cfg.code_style.keywords},
+    Define = colors.Cyan,
+    Typedef = {fg = c.diff_text},
+    Exception = {fg = c.dark_purple},
+    Conditional = {fg = c.orange, fmt = cfg.code_style.keywords},
+    Repeat = {fg = c.orange, fmt = cfg.code_style.keywords},
+    Statement = colors.Orange,
+    Macro = colors.Cyan,
+    Error = colors.Red,
+    Label = colors.Orange,
+    Special = colors.Orange,
+    SpecialChar = colors.blue,
+    Function = {fg = c.yellow, fmt = cfg.code_style.functions},
+    Operator = {fg = c.diff_delete},
     Title = colors.Cyan,
-    Tag = colors.Green,
-    Delimiter = colors.LightGrey,
-    Comment = {fg = c.grey, fmt = cfg.code_style.comments},
-    SpecialComment = {fg = c.grey, fmt = cfg.code_style.comments},
-    Todo = {fg = c.red, fmt = cfg.code_style.comments}
+    Tag = {fg = c.light_cyan},
+    Delimiter = {fg = c.diff_text},
+    Comment = {fg = c.blue, fmt = cfg.code_style.comments},
+    SpecialComment = {fg = c.blue, fmt = cfg.code_style.comments},
+    Todo = {fg = c.orange, fmt = cfg.code_style.comments}
 }
 
 hl.treesitter = {
-    TSAnnotation = colors.Fg,
-    TSAttribute = colors.Cyan,
-    TSBoolean = colors.Orange,
-    TSCharacter = colors.Orange,
-    TSComment = {fg = c.grey, fmt = cfg.code_style.comments},
-    TSConditional = {fg = c.purple, fmt = cfg.code_style.keywords},
-    TSConstant = colors.Orange,
-    TSConstBuiltin = colors.Orange,
-    TSConstMacro = colors.Orange,
-    TSConstructor = {fg = c.yellow, fmt = "bold"},
-    TSError = colors.Fg,
-    TSException = colors.Purple,
+    TSAnnotation = colors.Cyan,
+    TSAttribute = colors.Yellow,
+    TSBoolean = colors.Red,
+    TSCharacter = colors.Red,
+    TSComment = {fg = c.blue, fmt = cfg.code_style.comments},
+    TSConditional = {fg = c.orange, fmt = cfg.code_style.keywords},
+    TSConstant = {fg = c.light_red},
+    TSConstBuiltin = {fg = c.light_green},
+    TSConstMacro = colors.Cyan,
+    TSConstructor = {fg = c.light_green, fmt = "bold"},
+    TSError = {fg = c.diff_delete},
+    TSException = {fg = c.diff_delete},
     TSField = colors.Cyan,
-    TSFloat = colors.Orange,
-    TSFunction = {fg = c.blue, fmt = cfg.code_style.functions},
-    TSFuncBuiltin = {fg = c.cyan, fmt = cfg.code_style.functions},
-    TSFuncMacro = {fg = c.cyan, fmt = cfg.code_style.functions},
-    TSInclude = colors.Purple,
-    TSKeyword = {fg = c.purple, fmt = cfg.code_style.keywords},
-    TSKeywordFunction = {fg = c.purple, fmt = cfg.code_style.functions},
-    TSKeywordOperator =  {fg = c.purple, fmt = cfg.code_style.keywords},
-    TSLabel = colors.Red,
-    TSMethod = colors.Blue,
+    TSFloat = colors.Red,
+    TSFunction = {fg = c.yellow, fmt = cfg.code_style.functions},
+    TSFuncBuiltin = {fg = c.yellow, fmt = cfg.code_style.functions},
+    TSFuncMacro = {fg = c.yellow, fmt = cfg.code_style.functions},
+    TSInclude = colors.Orange,
+    TSKeyword = {fg = c.orange, fmt = cfg.code_style.keywords},
+    TSKeywordFunction = {fg = c.yellow, fmt = cfg.code_style.functions},
+    TSKeywordOperator =  {fg = c.orange, fmt = cfg.code_style.keywords},
+    TSLabel = colors.Orange,
+    TSMethod = colors.Yellow,
     TSNamespace = colors.Yellow,
     TSNone = colors.Fg,
-    TSNumber = colors.Orange,
-    TSOperator = colors.Fg,
+    TSNumber = colors.Red,
+    TSOperator = {fg = c.diff_delete},
     TSParameter = colors.Red,
     TSParameterReference = colors.Fg,
-    TSProperty = colors.Cyan,
+    TSProperty = {fg = c.light_cyan},
     TSPunctDelimiter = colors.LightGrey,
-    TSPunctBracket = colors.LightGrey,
-    TSPunctSpecial = colors.Red,
-    TSRepeat = {fg = c.purple, fmt = cfg.code_style.keywords},
+    TSPunctBracket = colors.Purple,
+    TSPunctSpecial = colors.Purple,
+    TSRepeat = {fg = c.orange, fmt = cfg.code_style.keywords},
     TSString = {fg = c.green, fmt = cfg.code_style.strings},
-    TSStringRegex = {fg = c.orange, fmt = cfg.code_style.strings},
-    TSStringEscape = {fg = c.red, fmt = cfg.code_style.strings},
-    TSSymbol = colors.Cyan,
-    TSTag = colors.Red,
-    TSTagDelimiter = colors.Red,
+    TSStringRegex = {fg = c.green, fmt = cfg.code_style.strings},
+    TSStringEscape = {fg = c.green, fmt = cfg.code_style.strings},
+    TSSymbol = {fg = c.light_green},
+    TSTag = {fg = c.light_green},
+    TSTagDelimiter = {fg = c.diff_text},
     TSText = colors.Fg,
     TSStrong = {fg = c.fg, fmt = 'bold'},
     TSEmphasis = {fg = c.fg, fmt = 'italic'},
@@ -186,8 +186,8 @@ hl.treesitter = {
     TSNote = colors.Fg,
     TSWarning = colors.Fg,
     TSDanger = colors.Fg,
-    TSType = colors.Yellow,
-    TSTypeBuiltin = colors.Orange,
+    TSType = colors.Purple,
+    TSTypeBuiltin = colors.Purple,
     TSVariable = {fg = c.fg, fmt = cfg.code_style.variables},
     TSVariableBuiltin = {fg = c.red, fmt = cfg.code_style.variables},
 }
@@ -278,15 +278,15 @@ hl.plugins.coc = {
 }
 
 hl.plugins.whichkey = {
-    WhichKey = colors.Red,
-    WhichKeyDesc = colors.Blue,
+    WhichKey = colors.Blue,
+    WhichKeyDesc = colors.Yellow,
     WhichKeyGroup = colors.Orange,
-    WhichKeySeperator = colors.Green
+    WhichKeySeperator = colors.Purple
 }
 
 hl.plugins.gitgutter = {
-    GitGutterAdd = {fg = c.green},
-    GitGutterChange = {fg = c.blue},
+    GitGutterAdd = {fg = c.orange},
+    GitGutterChange = {fg = c.yellow},
     GitGutterDelete = {fg = c.red},
 }
 
@@ -311,27 +311,27 @@ hl.plugins.diffview = {
     DiffviewEndOfBuffer = hl.common.EndOfBuffer,
     DiffviewFilePanelRootPath = colors.Grey,
     DiffviewFilePanelPath = colors.Grey,
-    DiffviewFilePanelInsertions = colors.Green,
+    DiffviewFilePanelInsertions = colors.Blue,
     DiffviewFilePanelDeletions = colors.Red,
-    DiffviewStatusAdded = colors.Green,
-    DiffviewStatusUntracked = colors.Blue,
-    DiffviewStatusModified = colors.Blue,
-    DiffviewStatusRenamed = colors.Blue,
-    DiffviewStatusCopied = colors.Blue,
-    DiffviewStatusTypeChange = colors.Blue,
-    DiffviewStatusUnmerged = colors.Blue,
+    DiffviewStatusAdded = colors.Blue,
+    DiffviewStatusUntracked = colors.Orange,
+    DiffviewStatusModified = colors.Orange,
+    DiffviewStatusRenamed = colors.Orange,
+    DiffviewStatusCopied = colors.Orange,
+    DiffviewStatusTypeChange = colors.Orange,
+    DiffviewStatusUnmerged = colors.Orange,
     DiffviewStatusUnknown = colors.Red,
     DiffviewStatusDeleted = colors.Red,
     DiffviewStatusBroken = colors.Red
 }
 
 hl.plugins.gitsigns = {
-    GitSignsAdd = colors.Green,
-    GitSignsAddLn = colors.Green,
-    GitSignsAddNr = colors.Green,
-    GitSignsChange = colors.Blue,
-    GitSignsChangeLn = colors.Blue,
-    GitSignsChangeNr = colors.Blue,
+    GitSignsAdd = colors.Yellow,
+    GitSignsAddLn = colors.Yellow,
+    GitSignsAddNr = colors.Yellow,
+    GitSignsChange = colors.Orange,
+    GitSignsChangeLn = colors.Orange,
+    GitSignsChangeNr = colors.Orange,
     GitSignsDelete = colors.Red,
     GitSignsDeleteLn = colors.Red,
     GitSignsDeleteNr = colors.Red
@@ -349,7 +349,7 @@ hl.plugins.nvim_tree = {
     NvimTreeIndentMarker = colors.Fg,
     NvimTreeImageFile = { fg = c.dark_purple },
     NvimTreeSymlink = colors.Purple,
-    NvimTreeFolderName = colors.Blue,
+    NvimTreeFolderName = colors.Orange,
 }
 hl.plugins.telescope = {
     TelescopeBorder = colors.Red,
@@ -363,7 +363,7 @@ hl.plugins.telescope = {
 }
 
 hl.plugins.dashboard = {
-    DashboardShortCut = colors.Blue,
+    DashboardShortCut = colors.Orange,
     DashboardHeader = colors.Yellow,
     DashboardCenter = colors.Cyan,
     DashboardFooter = { fg = c.dark_red, fmt = "italic"}
@@ -377,10 +377,10 @@ hl.plugins.outline = {
 hl.plugins.ts_rainbow = {
     rainbowcol1 = colors.Grey,
     rainbowcol2 = colors.Yellow,
-    rainbowcol3 = colors.Blue,
+    rainbowcol3 = colors.Orange,
     rainbowcol4 = colors.Orange,
     rainbowcol5 = colors.Purple,
-    rainbowcol6 = colors.Green,
+    rainbowcol6 = colors.Blue,
     rainbowcol7 = colors.Red
 }
 
@@ -437,11 +437,11 @@ hl.plugins.mini = {
 }
 
 hl.langs.c = {
-    cInclude = colors.Blue,
+    cInclude = colors.Orange,
     cStorageClass = colors.Purple,
     cTypedef = colors.Purple,
     cDefine = colors.Cyan,
-    cTSInclude = colors.Blue,
+    cTSInclude = colors.Orange,
     cTSConstant = colors.Cyan,
     cTSConstMacro = colors.Purple,
     cTSOperator = colors.Purple,
@@ -449,7 +449,7 @@ hl.langs.c = {
 
 hl.langs.cpp = {
     cppStatement = { fg = c.purple, fmt = "bold" },
-    cppTSInclude = colors.Blue,
+    cppTSInclude = colors.Orange,
     cppTSConstant = colors.Cyan,
     cppTSConstMacro = colors.Purple,
     cppTSOperator = colors.Purple,
@@ -459,8 +459,8 @@ hl.langs.markdown = {
     markdownBlockquote = colors.Grey,
     markdownBold = {fg = c.none, fmt = "bold"},
     markdownBoldDelimiter = colors.Grey,
-    markdownCode = colors.Green,
-    markdownCodeBlock = colors.Green,
+    markdownCode = colors.Blue,
+    markdownCodeBlock = colors.Blue,
     markdownCodeDelimiter = colors.Yellow,
     markdownH1 = {fg = c.red, fmt = "bold"},
     markdownH2 = {fg = c.purple, fmt = "bold"},
@@ -482,7 +482,7 @@ hl.langs.markdown = {
     markdownRule = colors.Purple,
     markdownUrl = {fg = c.blue, fmt = "underline"},
     markdownUrlDelimiter = colors.Grey,
-    markdownUrlTitleDelimiter = colors.Green
+    markdownUrlTitleDelimiter = colors.Blue
 }
 
 hl.langs.php = {
@@ -495,11 +495,11 @@ hl.langs.php = {
     phpIdentifier = {fg = c.orange, fmt = cfg.code_style.variables},
     phpBoolean = colors.Cyan,
     phpNumber = colors.Orange,
-    phpHereDoc = colors.Green,
-    phpNowDoc = colors.Green,
+    phpHereDoc = colors.Blue,
+    phpNowDoc = colors.Blue,
     phpSCKeyword = {fg = c.purple, fmt = cfg.code_style.keywords},
     phpFCKeyword = {fg = c.purple, fmt = cfg.code_style.keywords},
-    phpRegion = colors.Blue
+    phpRegion = colors.Orange
 }
 
 hl.langs.scala = {
@@ -512,14 +512,14 @@ hl.langs.scala = {
 }
 
 hl.langs.tex = {
-    latexTSInclude = colors.Blue,
+    latexTSInclude = colors.Orange,
     latexTSFuncMacro = {fg = c.fg, fmt = cfg.code_style.functions},
     latexTSEnvironment = { fg = c.cyan, fmt = "bold" },
     latexTSEnvironmentName = colors.Yellow,
     texCmdEnv = colors.Cyan,
     texEnvArgName = colors.Yellow,
-    latexTSTitle = colors.Green,
-    latexTSType = colors.Blue,
+    latexTSTitle = colors.Blue,
+    latexTSType = colors.Orange,
     latexTSMath   = colors.Orange,
     texMathZoneX  = colors.Orange,
     texMathZoneXX = colors.Orange,
@@ -527,8 +527,8 @@ hl.langs.tex = {
     texMathDelim = colors.Purple,
     texMathOper = colors.Red,
     texCmd = colors.Purple,
-    texCmdPart = colors.Blue,
-    texCmdPackage = colors.Blue,
+    texCmdPart = colors.Orange,
+    texCmdPackage = colors.Orange,
     texPgfType = colors.Yellow,
 }
 
@@ -539,7 +539,7 @@ hl.langs.vim = {
     vimMapModKey = colors.Orange,
     vimNotation = colors.Red,
     vimMapLhs = colors.Fg,
-    vimMapRhs = colors.Blue,
+    vimMapRhs = colors.Orange,
     vimVar = {fg = c.fg, fmt = cfg.code_style.variables},
     vimCommentTitle = {fg = c.light_grey, fmt = cfg.code_style.comments},
 }
