@@ -58,8 +58,8 @@ hl.common = {
     ErrorMsg = {fg = c.red, fmt = "bold"},
     WarningMsg = {fg = c.yellow, fmt = "bold"},
     MoreMsg = {fg = c.blue, fmt = "bold"},
-    IncSearch = {fg = c.bg0, bg = c.orange},
-    Search = {fg = c.bg0, bg = c.bg_yellow},
+    IncSearch = {fg = c.yellow, bg = c.orange},
+    Search = {fg = c.yellow, bg = c.bg_yellow},
     Substitute = {fg = c.bg0, bg = c.green},
     MatchParen = {fg = c.none, bg = c.grey},
     NonText = {fg = c.grey},
@@ -169,7 +169,6 @@ hl.treesitter = {
     TSStringRegex = {fg = c.green, fmt = cfg.code_style.strings},
     TSStringEscape = {fg = c.green, fmt = cfg.code_style.strings},
     TSSymbol = {fg = c.light_green},
-    TSTag = {fg = c.light_green},
     TSTagAttribute = {fg = c.yellow, fmt = 'italic'},
     TSTagDelimiter = {fg = c.diff_text},
     TSText = colors.Fg,
@@ -191,6 +190,7 @@ hl.treesitter = {
     TSTypeBuiltin = {fg = c.light_green},
     TSVariable = {fg = c.diff_text},
     TSVariableBuiltin = {fg = c.diff_text},
+    TSTag = {fg = c.light_green},
 }
 
 local diagnostics_error_color = cfg.diagnostics.darker and c.dark_red or c.red
@@ -252,7 +252,7 @@ hl.plugins.ale = {
 
 hl.plugins.barbar = {
     BufferCurrent = { fmt = "bold" },
-    BufferCurrentMod = { fg = c.orange, fmt = "bold,italic" },
+    BufferCurrentMod = { fg = c.orange,bg = c.yellow, fmt = "bold,italic" },
     BufferCurrentSign = { fg = c.purple },
     BufferInactiveMod = { fg = c.light_grey, bg = c.bg1, fmt = "italic" },
     BufferVisible = { fg = c.light_grey, bg = c.bg0 },
@@ -340,7 +340,7 @@ hl.plugins.gitsigns = {
 
 hl.plugins.nvim_tree = {
     NvimTreeNormal = { fg = c.fg, bg = cfg.transparent and c.none or c.bg_d },
-    NvimTreeVertSplit = { fg = c.bg_d, bg = cfg.transparent and c.none or c.bg_d },
+    NvimTreeVertSplit = { fg = c.bg_blue, bg = cfg.transparent and c.none or c.bg_d },
     NvimTreeEndOfBuffer = { fg = cfg.ending_tildes and c.bg2 or c.bg_d, bg = cfg.transparent and c.none or c.bg_d },
     NvimTreeRootFolder = { fg = c.yellow, fmt = "bold" },
     NvimTreeGitDirty = colors.Yellow,
