@@ -141,7 +141,7 @@ hl.treesitter = {
     TSConstant = {fg = c.light_red},
     TSConstBuiltin = {fg = c.light_green},
     TSConstMacro = colors.Cyan,
-    TSConstructor = {fg = c.yellow},
+    TSConstructor = {fg = c.light_green},
     TSError = {fg = c.diff_delete},
     TSException = {fg = c.diff_delete},
     TSField = colors.Cyan,
