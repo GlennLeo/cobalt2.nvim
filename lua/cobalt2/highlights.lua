@@ -140,7 +140,7 @@ hl.treesitter = {
     TSConstant = {fg = c.light_red},
     TSConstBuiltin = {fg = c.light_green},
     TSConstMacro = colors.Cyan,
-    TSConstructor = {fg = c.diff_text, fmt = "bold"},
+    TSConstructor = {fg = c.diff_text},
     TSError = {fg = c.diff_delete},
     TSException = {fg = c.diff_delete},
     TSField = colors.Cyan,
@@ -150,7 +150,7 @@ hl.treesitter = {
     TSFuncMacro = {fg = c.yellow, fmt = cfg.code_style.functions},
     TSInclude = colors.Orange,
     TSKeyword = {fg = c.yellow, fmt = cfg.code_style.keywords},
-    TSKeywordFunction = {fg = c.yellow, fmt = cfg.code_style.functions},
+    TSKeywordFunction = {fg = c.dark_purple, fmt = cfg.code_style.functions},
     TSKeywordOperator =  {fg = c.orange, fmt = cfg.code_style.keywords},
     TSLabel = colors.Orange,
     TSMethod = colors.Yellow,
@@ -160,7 +160,7 @@ hl.treesitter = {
     TSOperator = {fg = c.yellow},
     TSParameter = {fg = c.diff_text},
     TSParameterReference = colors.Fg,
-    TSProperty = {fg = c.yellow},
+    TSProperty = {fg = c.light_cyan},
     TSPunctDelimiter = colors.LightGrey,
     TSPunctBracket = colors.Yellow,
     TSPunctSpecial = colors.Purple,
@@ -189,8 +189,8 @@ hl.treesitter = {
     TSDanger = colors.Fg,
     TSType = {fg = c.purple, fmt = 'italic'},
     TSTypeBuiltin = {fg = c.light_green},
-    TSVariable = {fg = c.diff_text, fmt = cfg.code_style.variables},
-    TSVariableBuiltin = {fg = c.red, fmt = cfg.code_style.variables},
+    TSVariable = {fg = c.diff_text},
+    TSVariableBuiltin = {fg = c.diff_text},
 }
 
 local diagnostics_error_color = cfg.diagnostics.darker and c.dark_red or c.red
