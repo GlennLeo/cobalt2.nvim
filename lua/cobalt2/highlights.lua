@@ -131,6 +131,7 @@ hl.syntax = {
 }
 
 hl.treesitter = {
+    TSTag = {fg = c.light_green},
     TSAnnotation = colors.Cyan,
     TSAttribute = colors.Yellow,
     TSBoolean = colors.Red,
@@ -140,7 +141,7 @@ hl.treesitter = {
     TSConstant = {fg = c.light_red},
     TSConstBuiltin = {fg = c.light_green},
     TSConstMacro = colors.Cyan,
-    TSConstructor = {fg = c.diff_text},
+    TSConstructor = {fg = c.yellow},
     TSError = {fg = c.diff_delete},
     TSException = {fg = c.diff_delete},
     TSField = colors.Cyan,
@@ -190,7 +191,6 @@ hl.treesitter = {
     TSTypeBuiltin = {fg = c.light_green},
     TSVariable = {fg = c.diff_text},
     TSVariableBuiltin = {fg = c.diff_text},
-    TSTag = {fg = c.light_green},
 }
 
 local diagnostics_error_color = cfg.diagnostics.darker and c.dark_red or c.red

@@ -6,6 +6,7 @@ local colors = {
   red = c.red,
   green = c.green,
   yellow = c.yellow,
+  orange = c.orange,
   blue = c.blue,
   purple = c.purple,
   cyan = c.cyan,
