@@ -381,8 +381,8 @@ hl.plugins.ts_rainbow = {
     rainbowcol3 = colors.Orange,
     rainbowcol4 = colors.Orange,
     rainbowcol5 = colors.Purple,
-    rainbowcol6 = colors.Blue,
-    rainbowcol7 = colors.Red
+    rainbowcol6 = colors.Yellow,
+    rainbowcol7 = colors.Green
 }
 
 hl.plugins.mini = {
