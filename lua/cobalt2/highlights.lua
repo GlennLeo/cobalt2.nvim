@@ -350,15 +350,15 @@ hl.plugins.nvim_tree = {
     NvimTreeIndentMarker = colors.Fg,
     NvimTreeImageFile = { fg = c.dark_purple },
     NvimTreeSymlink = colors.Purple,
-    NvimTreeFolderName = colors.Orange,
+    NvimTreeFolderName = { fg = c.diff_text },
 }
 hl.plugins.telescope = {
-    TelescopeBorder = colors.Red,
-    TelescopePromptBorder = colors.Cyan,
-    TelescopeResultsBorder = colors.Cyan,
-    TelescopePreviewBorder = colors.Cyan,
+    TelescopeBorder = colors.Yellow,
+    TelescopePromptBorder = colors.Yellow,
+    TelescopeResultsBorder = colors.Yellow,
+    TelescopePreviewBorder = colors.Yellow,
     TelescopeMatching = { fg = c.orange, fmt = "bold" },
-    TelescopePromptPrefix = colors.Green,
+    TelescopePromptPrefix = colors.Orange,
     TelescopeSelection =  { bg =c.bg2 },
     TelescopeSelectionCaret = colors.Yellow
 }
