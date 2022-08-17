@@ -82,8 +82,8 @@ hl.common = {
     TabLine = {fg = c.fg, bg = c.bg1},
     TabLineFill = {fg = c.grey, bg = c.bg1},
     TabLineSel =  {fg = c.bg0, bg = c.fg},
-    VertSplit = {fg = c.bg3},
-    Visual = {bg = c.bg3},
+    VertSplit = {fg = c.bg2},
+    Visual = {bg = c.bg2},
     VisualNOS = {fg = c.none, bg = c.bg2, fmt = "underline"},
     QuickFixLine = {fg = c.blue, fmt = "underline"},
     Debug = {fg = c.yellow},
@@ -123,7 +123,7 @@ hl.syntax = {
     Function = {fg = c.yellow, fmt = cfg.code_style.functions},
     Operator = {fg = c.diff_delete},
     Title = colors.Cyan,
-    Tag = {fg = c.light_cyan},
+    Tag = colors.Cyan,
     Delimiter = {fg = c.diff_text},
     Comment = {fg = c.blue, fmt = cfg.code_style.comments},
     SpecialComment = {fg = c.blue, fmt = cfg.code_style.comments},
@@ -131,7 +131,6 @@ hl.syntax = {
 }
 
 hl.treesitter = {
-    TSTag = {fg = c.light_green},
     TSAnnotation = colors.Cyan,
     TSAttribute = colors.Yellow,
     TSBoolean = colors.Red,
@@ -191,6 +190,7 @@ hl.treesitter = {
     TSTypeBuiltin = {fg = c.light_green},
     TSVariable = {fg = c.diff_text},
     TSVariableBuiltin = {fg = c.diff_text},
+    TSTag = colors.Cyan,
 }
 
 local diagnostics_error_color = cfg.diagnostics.darker and c.dark_red or c.red
